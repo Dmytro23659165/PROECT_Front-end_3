@@ -6,14 +6,11 @@
 const field = document.getElementById('field');
 const ball = document.getElementById('ball');
 const ballRadius = ball.offsetWidth / 2;
-field.addEventListener('click', (event) => {
-    const fieldRect = field.getBoundingClientRect();
-    let x = event.clientX - fieldRect.left - ballRadius;
-    let y = event.clientY - fieldRect.top - ballRadius;
-    x = Math.max(0, Math.min(x, field.offsetWidth - ball.offsetWidth));
-    y = Math.max(0, Math.min(y, field.offsetHeight - ball.offsetHeight));
-    ball.style.left = `${x}px`;
-    ball.style.top = `${y}px`;
+field.addEventListener('click', ({ clientX, clientY }) => {
+    const { left, top, width, height } = field.getBoundingClientRect();
+    const x = Math.min(Math.max(clientX - left - ballRadius, 0), width - ball.offsetWidth);
+    const y = Math.min(Math.max(clientY - top - ballRadius, 0), height - ball.offsetHeight);
+    Object.assign(ball.style, { left: `${x}px`, top: `${y}px` });
 });
 // main-end
 
@@ -22,8 +19,8 @@ let butOne = document.querySelector('button[id="button_1"]');
 let butTwo = document.querySelector('button[id="button_2"]');
 let butThree = document.querySelector('button[id="button_3"]');
 let numbers = [];
-function fullNumberFinds(promptMessage, index) {
-    let num = prompt(promptMessage, 0);
+function fullNumberFinds(promptPov, index) {
+    let num = prompt(promptPov, 0);
     if (!isNaN(num) && num.trim() !== "") {
         num = parseFloat(num);
         // alert(`Ви ввели число ${num}`);
@@ -53,17 +50,14 @@ console.log(butThree);
 // slider(footer)
 let slideIndex = 1;
 showSlides(slideIndex);
-
 function plusSlides(n) {
     console.log("Changing slide by: " + n);
     showSlides(slideIndex += n);
 }
-
 function currentSlide(n) {
     console.log("Setting current slide to: " + n);
     showSlides(slideIndex = n);
 }
-
 function showSlides(n) {
     let i;
     let slides = document.getElementsByClassName("mySlides");
@@ -102,5 +96,4 @@ function showSlides(n) {
         next.style.display = "block";
     }
 }
-
 // slider(footer)-end

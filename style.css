@@ -451,6 +451,25 @@ body{
         width: 30px;
         height: 30px;
     }
+
+    .imgForSlider{
+        width: 100px;
+        height: 100px;
+    }
+    .text_name{
+        width: 160px;
+    }
+    .style_dot{
+        gap: 2px;
+    }
+    .dot{
+        height: 2px;
+        width: 10px;
+    }
+    .active, .dot:hover, .dot:focus{
+        width: 12px;
+        height: 2px;
+    }
 }
 
 @media (max-width: 380px) {
@@ -533,6 +552,11 @@ body{
     .dot{
         height: 2px;
         width: 10px;
+    }
+
+    .active, .dot:hover, .dot:focus{
+        width: 12px;
+        height: 2px;
     }
 }
 /* adaptive_end */
