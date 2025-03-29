@@ -7,10 +7,186 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+    />
+
     <title>Document</title>
 </head>
 <body>
     <aside class="aside">
+      <!-- proect artem -->
+        <header class="artems">
+          <div class="logo">
+            <img src="./artem's images/Vector 2.png" alt="Logo">
+            <img src="./artem's images/Group 1.png" alt="Logo">
+            <img src="./artem's images/Vector 3.png" alt="Logo">
+            <span>Coding Magic</span>
+          </div>
+          <nav>
+            <ul>
+                <li>
+                    <div id="interactive-button"><a href="">Інтерактив</a></div>
+                    <div id="menu" class="hide">
+                        <div class="frame">
+                            <p>Числовий</p>
+                            <p>Ігровий</p>
+                            <p>Ознайомчий</p>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Наша команда</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+          </nav>
+          <div class="right-section">
+            <div class="toggle-switch">
+                <img src="./artem's images/Group 71.png" alt="71">
+            </div>
+            <div class="welcome-text">Вітаємо, User!</div>
+          </div>
+        </header>
+      <div class="pather">
+        <!-- <img src="./images/side img/Vector 11 (2).png" alt="" class="v112">
+        <img src="./images/side img/Vector (10).png" alt="" class="v10"> -->
+        <!-- <img src="./images/side img/Group 141.png" alt="141" class="g141">
+        <img src="./images/side img/Rectangle 31.png" alt="31" class="r31"> -->
+        
+          <div class="sectionsBox">
+            <h2>Популярні інтерактивні ігри</h2>
+            <!-- <hr> -->
+            <div class="line-container">
+              <img class="line-image" src="./images/line.png" alt="line">
+            </div>
+            <h1 class="first-game">Перевір в який рік ти народився</h1>
+          </div>
+        <section class="section">
+            <div class="input-container">
+                <input type="number" id="birthYear" placeholder="Введіть рік народження">
+                <button onclick="checkLeapYear()">
+                    <img src="./artem's images/Group 104.png" alt="104">
+                </button>
+                <span id="resultArtem" class="resultArtem"></span>
+            </div>
+          <!-- <hr class="section-2-hr"> -->
+          <div class="line-container">
+            <img class="line-image" src="./images/line.png" alt="line">
+          </div>
+        </section>
+        <section class="section-2">
+          <h1 class="second-game">Вгадай число яке загадав комп'ютер (1 до 10)</h1>
+            <div class="second-div">
+                <input class="guessing-input" type="number" id="guessInput" placeholder="Введіть число">
+                <button class="second-button" onclick="checkGuess()">
+                    <img src="./artem's images/Group 104.png" alt="104">
+                </button>
+                <span id="message" class="message"></span>
+            </div>
+            <!-- <hr class="section-2-hr"> -->
+            <div class="line-container">
+              <img class="line-image" src="./images/line.png" alt="line">
+            </div>
+        </section>
+      </div>
+      <!-- proect artem  -->
+
+
+
+
+
+      
+
+      <!-- proect rodiona -->
+    <div class="rodionsproect">
+      <h1>Камінь - Ножиці - Папір</h1>
+
+      <div class="choices">
+  
+          <div class="choice" onclick="play('rock')">
+              <img src="./rodion's images/Frame 127 (1).png" alt="Камінь">
+          </div>
+          <div class="choice" onclick="play('scissors')">
+              <img src="./rodion's images/Frame 126.png" alt="Ножиці">
+          </div>
+          <div class="choice" onclick="play('paper')">
+              <img src="./rodion's images/Frame 128.png" alt="Папір">
+          </div>
+      </div>
+  
+      <div class="result"></div>
+  
+      <div class="score">
+          <p>Рахунок:</p>
+          <p>Комп'ютер: <span id="computer-score">0</span></p>
+          <p>Ви: <span id="user-score">0</span></p>
+      </div>
+  
+      <button class="btn-computer" onclick="computerPlay()">Варіант комп'ютера</button>
+      
+      <!-- <hr> -->
+      <div class="rodionline-container">
+        <img class="line-image" src="./images/line.png" alt="line">
+      </div>
+      <div class="kalculator">
+        <div class="kalkulDiv"><h1>Калькулятор</h1></div>
+          <div class="calculator">
+              
+              
+  
+              <input type="text" class="input-field" id="num1" placeholder="Введіть число" />
+              <input type="text" class="input-field" id="num2" placeholder="Введіть число" />
+  
+              <div class="buttonsRod">
+                  <div class="block1">
+                      <div class="button" id="plusButton" ><a href="#"><img src="./rodion's images/Frame 111.png" alt="+"></a>
+                      </div>
+                      <div class="button" id="timesButton" ><a href="#"><img src="./rodion's images/Frame 114.png" alt="*"></a>
+                      </div>
+                  </div>
+                  <div class="block2">
+                      <div class="button" id="minusButton" ><a href="#"><img src="./rodion's images/Frame 112.png" alt="-"></a>
+                      </div>
+                      <div class="button" id="divideButton" ><a href="#"><img src="./rodion's images/Frame 113.png" alt="/"></a>
+                      </div>
+                  </div>
+  
+              </div>
+              <button class="btn-submit" onclick="calculate()">Результат</button>
+  
+              <div class="result">
+                  <p>Результат: <span id="result">0</span></p>
+              </div>
+          </div>
+          <!-- <hr> -->
+          <div class="rodionline-container">
+            <img class="line-image" src="./images/line.png" alt="line">
+          </div>
+          <div class="timekalkulDiv"><h2>Калькулятор часу</h2></div>
+          <div class="timeKalkul">
+              <div class="rodioninput-container">
+                  <input type="number" id="inputNumber" placeholder="Введіть число">
+                  <button class="search-btn" onclick="calculateTime()">
+                      <img src="./artem's images/Group 104.png" alt="Search">
+                  </button>
+              </div>
+              <div class="output" id="outputTime">-----------------------</div>
+          </div>
+      </div>  
+    </div>  
+    <!-- proect rodiona -->
+
+
+
+
+
         <header class="header">
             <div class="container">
                 <div class="inner-contaiballPeremiscennaner">
@@ -36,7 +212,7 @@
                 </div>
             </div>
         </nav>
-        <section class="section">
+        <section class="miySection">
             <div class="container">
                 <div class="number-input-wrapper">
                     <div class="number-input-content">
@@ -54,7 +230,7 @@
                 </div>
             </div>
         </section>
-        <footer class="footer">
+        <footer class="footer_miy">
             <div class="container_box">
                 <div class="team-member">
                     <p class="team-title">Наша команда</p>
@@ -144,8 +320,164 @@
                     </div>
                 </div>        
         </footer>
+
+
+        <!-- Project Danyla -->
+          <section class="DanylosSection">
+            <div class="container center">
+              <p class="txts">Обери вченого/их</p>
+              <ul class="list">
+                <li class="item-list"></li>
+                <li class="item-list"></li>
+                <li class="item-list"></li>
+                <li class="item-list"></li>
+                <li class="item-list"></li>
+                <li class="item-list"></li>
+                <li class="item-list"></li>
+                <li class="item-list"></li>
+                <li class="item-list"></li>
+                <li class="item-list"></li>
+                <li class="item-list"></li>
+                <li class="item-list"></li>
+              </ul>
+              <div class="for-list">
+                <ul class="list2">
+                  <button class="item-list2" id="list1">
+                    <p class="txt-item-list2">Які вчені народилися в 19 ст.</p>
+                  </button>
+                  <button class="item-list2" id="list2">
+                    <p class="txt-item-list2">Відсортувати вчених за алфавітом</p>
+                  </button>
+                  <button class="item-list2" id="list3">
+                    <p class="txt-item-list2">
+                      Відсортувати вчених за кількістю прожитих років
+                    </p>
+                  </button>
+                  <button class="item-list2" id="list4">
+                    <p class="txt-item-list2">
+                      Знайти вченого, який народився найпізніше
+                    </p>
+                  </button>
+                </ul>
+                <ul class="list2">
+                  <button class="item-list2" id="list5">
+                    <p class="txt-item-list2">
+                      Знайти рік народження Albert Einshtein
+                    </p>
+                  </button>
+                  <button class="item-list2" id="list6">
+                    <p class="txt-item-list2">
+                      Знайти вчених, прізвища яких починаються на літеру “С”
+                    </p>
+                  </button>
+                  <button class="item-list2" id="list7">
+                    <p class="txt-item-list2">
+                      Видалити всіх вчених, ім’я яких починається на “А”
+                    </p>
+                  </button>
+                  <button class="item-list2" id="list8">
+                    <p class="txt-item-list2">
+                      Знайти вченого, який прожив найдовше і вченого, який прожив
+                      найменше
+                    </p>
+                  </button>
+                </ul>
+              </div>
+      
+              <ul class="list2">
+                <li class="item-list2 last-item">
+                  <button class="item-list2" id="list9">
+                    <p class="txt-item-listTwo">
+                      1. Знайти вчених, в яких співпадають перші літери імені і
+                      прізвища
+                    </p>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <footer class="footer">
+            <div class="containerFooter">
+              <ul class="listFirst firstlist">
+                <img src="./danylo's images/footer.png" alt="Coading"/>
+              </ul>
+              <ul class="listSecond">
+                <li class="itemListSecond">
+                  <a href="tel:+381234567890">Тел: +38 (123) 456 78 90</a>
+                </li>
+                <li class="itemListSecond">
+                  <a href="mailto:codingmagic@gmail.com"
+                    >E-Mail: codingmagic@gmail.com</a
+                  >
+                </li>
+                <li class="itemListSecond">
+                  <a href="https://www.facebook.com/?locale=uk_UA" target="_blank"
+                    >Facebook: CodingMagic</a
+                  >
+                </li>
+                <li class="itemListSecond">
+                  <a href="https://x.com/?lang=uk&mx=2" target="_blank"
+                    >Twitter: CodingMagic</a
+                  >
+                </li>
+                <li class="itemListSecond">
+                  <a href="https://www.instagram.com" target="_blank"
+                    >Instagram: CodingMagic</a
+                  >
+                </li>
+              </ul>
+              <div>
+                <ul class="listThird">
+                  <li>
+                    <form action="" class="forms">
+                      <input
+                        class="inputs"
+                        type="email"
+                        placeholder="Ваша ел. адреса..."
+                      />
+                    </form>
+                      <button class="buttons">
+                        <!-- <span class="spans">Підписатись</span> -->
+                        Підписатись
+                      </button>
+                    </form>
+                  </li>
+                </ul>
+                <p class="txtListThird">
+                  *Підписавшись, Ви зможете ортимувати інформаццію про новинки на
+                  сайті
+                </p>
+              </div>
+            </div>
+            <div id="modal">
+              <div id="modal_backgroung"></div>
+              <div id="modal_window">
+                <div id="modal_close">&#10006;</div>
+                <div id="modal_title"></div>
+                <div id="modal_text">
+                  <div class="for-modal">
+                    <img src="./danylo's images/messageThanks.png" alt="thanks"/>
+                    <p class="text-of-modal">Дякую за підписку!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+          <!-- Project Danyla -->
     </aside>
     
     <script src="./index.js"></script>
 </body>
 </html>
+<!-- <img src="./danylo's images/AlbertEinsteinHead.jpg" alt=""> -->
+<!-- <img src="./danylo's images/GodfreyKnellerIsaacNewton.jpg" alt=""> -->
+<!-- <img src="./danylo's images/Galileo.jpg" alt=""> -->
+<!-- <img src="./danylo's images/MarieCuriec.jpg" alt=""> -->
+<!-- <img src="./danylo's images/Kepler.jpg" alt=""> -->
+<!-- <img src="./danylo's images/NicolausCopernicus.jpg" alt=""> -->
+<!-- <img src="./danylo's images/MaxPlanck.jpg" alt=""> -->
+<!-- <img src="./danylo's images/Blodgett.jpg" alt=""> -->
+<!-- <img src="./danylo's images/Lovelace.png" alt=""> -->
+<!-- <img src="./danylo's images/Sarah E.jpg" alt=""> -->
+<!-- <img src="./danylo's images/Meitner.jpg" alt=""> -->
+<!-- <img src="./danylo's images/Hammarström.jpg" alt=""> -->

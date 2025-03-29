@@ -6,8 +6,9 @@ body{
     align-items: center;
     gap: 36px;
     background-image: url(./images/background.png);
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: 100%;
+    background-color: rgb(241, 241, 241);
 }
 .aside{
     display: flex;
@@ -15,7 +16,553 @@ body{
     flex-direction: column;
     align-items: center;
     width: 99%;
+    height: 100%;
 }
+
+
+
+
+/* artem's proect */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+.pather{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* gap: ; */
+  background-color: white;
+  width: 80%;
+}
+.artems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 50px;
+  background: #fff;
+  color: #000;
+  border-bottom: 1px solid #ddd;
+  width: 101%;
+} 
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline;
+}
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+.hide {
+  display: none;
+}
+#menu {
+  margin-top: 10px;
+}
+.frame {
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px 5px;
+  text-align: center;
+}
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.toggle-switch {
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+.welcome-text {
+  font-size: 14px;
+  color: #000;
+}
+.decorative-line-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .v112 {
+  position: absolute;
+}
+.v10 {
+  position: absolute;
+  order: 1;
+} */
+.g141 {
+  position: absolute;
+  width: 100%;
+  z-index: -2;
+}
+/* .r31 { */
+/* Rectangle 31 */
+/* position: absolute;
+width: auto;
+height: 3202px;
+left: 175px;
+right: 175px;
+top: 80px;
+  z-index: -1;
+} */
+.section {
+  text-align: center;
+  padding-bottom: 40px;
+
+}
+/* .section h2 {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat Alternates;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  margin-bottom: 40px;
+} */
+.sectionsBox h2{ 
+  color: rgb(0, 0, 0);
+  font-family: Montserrat Alternates;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  margin-bottom: 40px;
+}
+.sectionsBox hr {
+  width: 43%;
+  margin: 0 auto 10px auto;
+  /* border: 0.5px solid #888; */
+}
+/* .section hr {
+  width: 50%;
+  margin: 0 auto 10px auto;
+  border: 0.5px solid #888;
+} */
+.sectionsBox{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(241, 241, 241);
+  padding-top: 40px;
+}
+.first-game {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color: rgb(0, 0, 0);
+  font-family: Montserrat Alternates;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+.rodioninput-container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 20px;
+  /* margin-left: 600px; */
+  margin-bottom: 40px;
+  /* width: 215px; */
+  height: 35px;
+}
+.rodioninput-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  width: 200px;
+  background: #ddd;
+}
+.rodioninput-container button {
+  padding: 10px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+.result {
+  text-align: center;
+  /* margin-top: 10px; */
+  white-space: nowrap;
+  margin-left: 90px;
+}
+.timeKalkul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 33px;
+}
+.timekalkulDiv{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-2 {
+  text-align: center;
+  padding: 40px;
+  margin-top: -80px;
+}
+
+.second-game {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  color: rgb(0, 0, 0);
+  font-family: Montserrat Alternates;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.guessing-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  width: 125px;
+  margin-left: 20px;
+  background: #ddd;
+}
+
+.second-button {
+  padding: 10px;
+  margin-left: -5px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+.message {
+  text-align: center;
+  margin-top: 10px;
+  color: green;
+  white-space: nowrap;
+  margin-left: 220px;
+}
+
+.second-div {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin-top: 20px;
+  margin-left: 600px;
+  margin-bottom: 40px;
+  width: 215px;
+  height: 35px;
+}
+
+.section-2-hr {
+  width: 78%;
+  margin: 0 auto 10px auto;
+  /* border: 0.5px solid #888; */
+}
+
+@media (max-width: 1024px) { 
+  header {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav ul {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+  }
+  .r31 {
+      align-self: center;
+      width: 700px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .section h2, .section-2 h1 {
+
+      font-size: 1.5rem;
+  }
+
+  .input-container, .second-div {
+      position: relative;
+      left: -370px;
+      flex-direction: column;
+      margin-top: 10px;
+  }
+
+  .input-container input, .guessing-input {
+      border-radius: 20px;
+      text-align: center;
+      margin-bottom: 10px;
+  }
+
+  .input-container button, .second-button {
+      border-radius: 20px;
+      width: 100%;
+  }
+  .r31 {
+      left: 140px;
+      width: 500px;
+  }
+  .second-game {
+      margin-bottom: 70px;
+  }
+  .first-game {
+      margin-bottom: 70px;
+  }
+}
+/* artem's proect */
+
+
+
+
+
+/* rodion's proect */
+/* body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+} */
+.rodionsproect{
+  background-color: white;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.rodionsproect h1 {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.choices {
+  margin-top: 40px;
+}
+
+.choice {
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.choice:hover {
+  transform: scale(1.1);
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 20px;
+  color: green;
+}
+
+.score {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.score p {
+  margin: 5px;
+}
+
+.btn-computer {
+  padding: 10px 20px 10px 20px;
+  background-color: #000000;
+  color: white;
+  /* border: none; */
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 36px;
+
+  transition: all 0.5s ease-out;
+  transform: scale(1);
+  transition-duration: 0.5s;
+}
+.btn-computer:hover, .btn-computer:focus{
+    animation: linear;
+    animation-duration: 0.3s;
+    animation-delay: 0.2s;
+
+    background-color: white;
+    color: black;
+    border-color: #000000;
+    transform: scale(0.99);
+}
+
+/* калькулятор */
+
+.block1{
+  display: flex;
+}
+
+.block2{
+  display: flex;
+}
+
+/* .buttonsRod {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 616px;
+} */
+.btn-submit{
+    flex: 1;
+    color: rgb(126, 126, 126);
+    padding: 10px;
+    width: 135px;
+    /* height: 35px; */
+    text-align: center;
+    text-decoration: none;
+
+    border-radius: 20px;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+    background: rgb(215, 215, 215);
+
+    background-color: rgb(182, 182, 182);
+    /* color: #fff; */
+    border-color: rgb(182, 182, 182);
+
+    transition: all 0.5s ease-out;
+    transform: scale(1);
+    transition-duration: 0.5s;
+}
+.btn-submit:hover, .btn-submit:focus{
+    background-color: rgb(148, 148, 148);
+    color: #fff;
+    border-color: rgb(148, 148, 148); 
+    transform: scale(0.99);
+}
+
+.rodionline-container{
+  padding-bottom: 36px;
+}
+.kalculator{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.calculator {
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  padding-bottom: 36px;
+  gap: 38px;
+}
+.input-field{
+    flex: 1;
+    color: rgb(126, 126, 126);
+    padding: 10px;
+    width: 135px;
+    height: 35px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+
+    background-color: rgb(182, 182, 182);
+    /* color: #fff; */
+    border-color: rgb(182, 182, 182);
+
+    transition: all 0.5s ease-out;
+    transform: scale(1);
+    transition-duration: 0.5s;
+}
+.input-field:hover, .input-field:focus{
+  color: #fff;
+    transform: scale(0.99);
+}
+
+.calculator hr{
+  margin-bottom: 36px;
+}
+
+.kalkulDiv{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 36px;
+}
+.kalkulDiv h1{
+  margin: 0;
+}
+
+/* калькулятор часу */
+
+.input-container {
+            display: flex;
+            align-items: center;
+            background: #ddd;
+            border-radius: 30px;
+            padding: 5px;
+        }
+        input {
+            border: none;
+            background: none;
+            outline: none;
+            padding: 10px;
+            font-size: 16px;
+            width: 150px;
+        }
+        .search-btn {
+            background: black;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .search-btn img {
+            width: 16px;
+            height: 16px;
+        }
+        .output {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+/* rodion's proect */
+
+
+
+
+
+
 .container{
 
 }
@@ -47,7 +594,7 @@ body{
     letter-spacing: 0%;
     text-align: left;
     margin: 0;
-    padding-top: 36px;
+    /* padding-top: 36px; */
 }
 .dinosaur-image{
     width: 720px;
@@ -59,7 +606,7 @@ body{
     align-items: center;
 }
 .line-image{
-    width: 536px;
+    /* width: 636px; */
 }
 /* header-end */
 
@@ -115,10 +662,11 @@ body{
 /* nav-end */
 
 /* section */
-.section{
+.miySection{
     background-color: white;
     width: 80%;
     padding-top: 36px;
+    padding-bottom: 36px;
 }
 .number-input-wrapper{
     display: flex;
@@ -186,7 +734,7 @@ body{
 /* section-end */
 
 /* footer */
-.footer{
+.footer_miy{
     background-color: white;
     width: 80%;
     padding-top: 36px;
@@ -560,3 +1108,435 @@ body{
     }
 }
 /* adaptive_end */
+
+
+
+
+
+
+
+
+/* project Danyla */
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  /* max-width: 100%; */
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+input {
+  all: unset;
+}
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/*  */
+/*  */
+/*  */
+/*  */
+a {
+  all: unset;
+}
+.DanylosSection {
+  /* background-image: url(./imgs/bg.jpg); */
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  /* background-position: center; */
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 80%;
+  padding-bottom: 36px;
+}
+/* .section {
+  background-image: url(./imgs/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+} */
+/* @media screen and (max-width: 320px) {
+  .section {
+    background-size: contain; 
+  }
+} */
+
+.container {
+  /* width: 1090px; */
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+}
+.txts {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat Alternates;
+  font-size: 16px;
+  font-weight: 100px;
+  line-height: 50px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 25px;
+}
+.list {
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 25%; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-content: center;
+  width: fit-content;
+}
+.item-list {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  background: rgb(217, 217, 217);
+  text-align: center;
+}
+.item-list {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.item-list {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat Alternates;
+  text-align: center;
+}
+.item-list {
+  margin-bottom: 36px;
+}
+/*  */
+.item-list2 {
+  border-radius: 20px;
+
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.25);
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  /* margin-bottom: 3px; */
+}
+.txt-item-list2 {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat Alternates;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+  padding: 15px;
+}
+.txt-item-listTwo{
+  color: rgb(255, 255, 255);
+  font-family: Montserrat Alternates;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+  padding: 15px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.for-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.list2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.last-item {
+  margin-top: 20px; /* Відступ зверху */
+  align-self: center; /* Вирівнювання по центру */
+}
+/* footer */
+/* */
+/*  */
+.footer {
+  /* margin-top: 3px; */
+  /* margin-bottom: 40px; */
+  width: 101%;
+  padding-bottom: 75px;
+  padding-top: 75px;
+  background-color: white;
+}
+.containerFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  /* margin-left: 80px; */
+}
+a {
+  cursor: pointer;
+}
+
+.itemListSecond {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat Alternates;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 170%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.txtListThird {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat Alternates;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 7px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 25px;
+}
+.inputs {
+  border-radius: 20px;
+  margin-right: 35px;
+  box-shadow: none;
+  background: rgb(215, 215, 215);
+  padding: 13px;
+}
+.buttons {
+  border-radius: 20px;
+  padding: 10px;
+  background: rgb(0, 0, 0);
+  color: white;
+
+  transition: all 0.5s ease-out;
+  transform: scale(1);
+  transition-duration: 0.5s;
+}
+.buttons:hover, .buttons:focus{
+    animation: linear;
+    animation-duration: 0.3s;
+    animation-delay: 0.2s;
+
+    background-color: white;
+    color: black;
+    border-color: #000000;
+    transform: scale(0.99);
+}
+/* .spans {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat Alternates;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: left;
+  padding: 20px;
+
+  transition: all 0.5s ease-out;
+  transform: scale(1);
+  transition-duration: 0.5s;
+}
+.spans:hover, .spans:focus{
+    animation: linear;
+    animation-duration: 0.3s;
+    animation-delay: 0.2s;
+
+    background-color: white;
+    color: black;
+    border-color: #000000;
+    transform: scale(0.99);
+} */
+/* модалка */
+
+#modal {
+  display: none;
+}
+#modal_backgroung {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: 0.8;
+  z-index: 90;
+}
+#modal_window {
+  position: fixed;
+  padding: 5px;
+  background: #ffffff;
+  width: 50%;
+  max-width: 100%;
+  min-height: 150px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  z-index: 99;
+}
+#modal_close {
+  position: absolute;
+  top: -2px;
+  right: -3px;
+  width: 25px;
+  height: 25px;
+  color: red;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+}
+#modal_title {
+  text-align: center;
+  font-weight: bold;
+}
+#modal_text {
+  font: 14px Arial;
+}
+.for-modal {
+  display: flex;
+  justify-content: center;
+}
+.text-of-modal {
+  position: absolute;
+  margin-top: 50px;
+}
+.text-of-modal {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat Alternates;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+@media screen and (max-width: 1200px) {
+  .firstlist {
+    display: none;
+  }
+  .list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 820px) {
+  .inputs {
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .forms {
+    display: none;
+  }
+  .txtListThird {
+    display: none;
+  }
+  .containerFooter {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 420px) {
+  .firstlist {
+    display: none;
+  }
+  .list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .list2 {
+    width: 50%;
+  }
+}
