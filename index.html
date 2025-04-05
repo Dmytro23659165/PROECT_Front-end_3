@@ -22,7 +22,7 @@
     <title>Document</title>
 </head>
 <body>
-    <aside class="aside">
+    <!-- <aside class="aside"> -->
       <!-- proect artem -->
         <header class="artems">
           <div class="logo">
@@ -54,7 +54,7 @@
             <div class="welcome-text">Вітаємо, User!</div>
           </div>
         </header>
-      <div class="pather">
+      <!-- <div class="pather"> -->
         <!-- <img src="./images/side img/Vector 11 (2).png" alt="" class="v112">
         <img src="./images/side img/Vector (10).png" alt="" class="v10"> -->
         <!-- <img src="./images/side img/Group 141.png" alt="141" class="g141">
@@ -68,14 +68,18 @@
             </div>
             <h1 class="first-game">Перевір в який рік ти народився</h1>
           </div>
+  <aside class="aside">
+      <div class="pather">
         <section class="section">
+          <div class="sectionSpansBox">
             <div class="input-container">
                 <input type="number" id="birthYear" placeholder="Введіть рік народження">
-                <button onclick="checkLeapYear()">
+                <button class="buttonYear" onclick="checkLeapYear()">
                     <img src="./artem's images/Group 104.png" alt="104">
                 </button>
-                <span id="resultArtem" class="resultArtem"></span>
             </div>
+            <span id="resultArtem" class="resultArtem"></span>
+          </div>
           <!-- <hr class="section-2-hr"> -->
           <div class="line-container">
             <img class="line-image" src="./images/line.png" alt="line">
@@ -83,13 +87,16 @@
         </section>
         <section class="section-2">
           <h1 class="second-game">Вгадай число яке загадав комп'ютер (1 до 10)</h1>
+          <div class="second-game-span">
             <div class="second-div">
                 <input class="guessing-input" type="number" id="guessInput" placeholder="Введіть число">
                 <button class="second-button" onclick="checkGuess()">
                     <img src="./artem's images/Group 104.png" alt="104">
                 </button>
-                <span id="message" class="message"></span>
+                
             </div>
+            <span id="message" class="message"></span>
+          </div>
             <!-- <hr class="section-2-hr"> -->
             <div class="line-container">
               <img class="line-image" src="./images/line.png" alt="line">
@@ -178,6 +185,9 @@
                   </button>
               </div>
               <div class="output" id="outputTime">-----------------------</div>
+          </div>
+          <div class="line-container">
+            <img class="line-image" src="./images/line.png" alt="line">
           </div>
       </div>  
     </div>  
@@ -464,20 +474,8 @@
             </div>
           </footer>
           <!-- Project Danyla -->
-    </aside>
+  </aside>
     
     <script src="./index.js"></script>
 </body>
 </html>
-<!-- <img src="./danylo's images/AlbertEinsteinHead.jpg" alt=""> -->
-<!-- <img src="./danylo's images/GodfreyKnellerIsaacNewton.jpg" alt=""> -->
-<!-- <img src="./danylo's images/Galileo.jpg" alt=""> -->
-<!-- <img src="./danylo's images/MarieCuriec.jpg" alt=""> -->
-<!-- <img src="./danylo's images/Kepler.jpg" alt=""> -->
-<!-- <img src="./danylo's images/NicolausCopernicus.jpg" alt=""> -->
-<!-- <img src="./danylo's images/MaxPlanck.jpg" alt=""> -->
-<!-- <img src="./danylo's images/Blodgett.jpg" alt=""> -->
-<!-- <img src="./danylo's images/Lovelace.png" alt=""> -->
-<!-- <img src="./danylo's images/Sarah E.jpg" alt=""> -->
-<!-- <img src="./danylo's images/Meitner.jpg" alt=""> -->
-<!-- <img src="./danylo's images/Hammarström.jpg" alt=""> -->

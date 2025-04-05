@@ -45,6 +45,10 @@ function checkGuess() {
     if (userGuess === randomNumber) {
         message.innerHTML = `<span class="success">Вітаю, ви вгадали число! (${randomNumber})</span>`;
         message.style.color = "green";
+    } else if(userGuess > 10 || userGuess < 0){
+        // message.innerHTML = `<span class="error">Невірно! Спробуйте ще раз. Число було ${randomNumber}.</span>`;
+        message.innerHTML = `<span class="error">Невірно!</span>`;
+        message.style.color = "red";
     } else {
         message.innerHTML = `<span class="error">Невірно! Спробуйте ще раз. Число було ${randomNumber}.</span>`;
         message.style.color = "red";

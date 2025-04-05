@@ -4,7 +4,7 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 36px;
+    /* gap: 36px; */
     background-image: url(./images/background.png);
     /* background-repeat: no-repeat; */
     background-size: 100%;
@@ -129,11 +129,24 @@ right: 175px;
 top: 80px;
   z-index: -1;
 } */
-.section {
-  text-align: center;
-  padding-bottom: 40px;
 
+.section {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+  text-align: center;
+  padding-top: 32px;
 }
+
+.sectionSpansBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 149px;
+}
+
 /* .section h2 {
   color: rgb(0, 0, 0);
   font-family: Montserrat Alternates;
@@ -167,13 +180,13 @@ top: 80px;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  background-color: rgb(241, 241, 241);
   padding-top: 40px;
+  /* width: 100%; */
+  /* background-color: rgb(241, 241, 241); */
 }
 .first-game {
   margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 4px;
   color: rgb(0, 0, 0);
   font-family: Montserrat Alternates;
   font-size: 25px;
@@ -211,7 +224,7 @@ top: 80px;
   text-align: center;
   /* margin-top: 10px; */
   white-space: nowrap;
-  margin-left: 90px;
+  /* margin-left: 90px; */
 }
 .timeKalkul{
   display: flex;
@@ -228,8 +241,9 @@ top: 80px;
 
 .section-2 {
   text-align: center;
-  padding: 40px;
-  margin-top: -80px;
+  padding-top: 32px;
+  padding-bottom: 36px;
+  /* margin-top: -80px; */
 }
 
 .second-game {
@@ -243,13 +257,21 @@ top: 80px;
   letter-spacing: 0%;
 }
 
+.second-game-span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 202px;
+  /* height: 35px; */
+}
+
 .guessing-input {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 20px 0 0 20px;
   outline: none;
   width: 125px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   background: #ddd;
 }
 
@@ -263,22 +285,34 @@ top: 80px;
   cursor: pointer;
 }
 
+.buttonYear{
+  padding: 10px;
+  margin-left: -5px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
 .message {
   text-align: center;
-  margin-top: 10px;
+  margin-bottom: 11px;
   color: green;
   white-space: nowrap;
-  margin-left: 220px;
+  /* margin-left: 220px; */
 }
 
 .second-div {
   display: flex;
   justify-content: center;
   /* align-items: center; */
+  /* gap: 202px; */
+  /* align-items: center; */
   margin-top: 20px;
-  margin-left: 600px;
+  /* margin-left: 600px; */
   margin-bottom: 40px;
-  width: 215px;
+  /* width: 215px; */
   height: 35px;
 }
 
@@ -312,20 +346,20 @@ top: 80px;
       font-size: 1.5rem;
   }
 
-  .input-container, .second-div {
+  .rodioninput-container, .second-div {
       position: relative;
       left: -370px;
       flex-direction: column;
       margin-top: 10px;
   }
 
-  .input-container input, .guessing-input {
+  .rodioninput-container input, .guessing-input {
       border-radius: 20px;
       text-align: center;
       margin-bottom: 10px;
   }
 
-  .input-container button, .second-button {
+  .rodioninput-container button, .second-button {
       border-radius: 20px;
       width: 100%;
   }
@@ -530,7 +564,8 @@ top: 80px;
             align-items: center;
             background: #ddd;
             border-radius: 30px;
-            padding: 5px;
+            /* padding: 5px; */
+            border: 1px solid #ccc;
         }
         input {
             border: none;
@@ -553,8 +588,11 @@ top: 80px;
             height: 16px;
         }
         .output {
-            margin-top: 10px;
+            margin-bottom: 17px;
             font-size: 18px;
+        }
+        .resultArtem{
+          background-color: white;
         }
 /* rodion's proect */
 
@@ -594,6 +632,7 @@ top: 80px;
     letter-spacing: 0%;
     text-align: left;
     margin: 0;
+    padding-top: 36px;
     /* padding-top: 36px; */
 }
 .dinosaur-image{
@@ -1381,6 +1420,10 @@ a {
   text-align: left;
   margin-top: 25px;
 }
+.listThird li{
+  display: flex;
+  justify-content: center;
+}
 .inputs {
   border-radius: 20px;
   margin-right: 35px;
@@ -1522,6 +1565,9 @@ a {
   }
   .containerFooter {
     justify-content: center;
+  }
+  .listThird li{
+    display: none;
   }
 }
 @media screen and (max-width: 420px) {
